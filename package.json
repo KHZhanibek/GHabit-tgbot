@@ -2,12 +2,12 @@
   "name": "ghabit-tgbot",
   "version": "1.0.0",
   "description": "Telegram bot for group habit tracker or challenge tracker application",
-  "main": "src/index.ts",
+  "main": "src/app.ts",
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "dev": "nodemon src/index.ts",
+    "start": "ts-node src/app.ts",
+    "dev": "nodemon src/app.ts",
     "build": "tsc",
-    "start:dist": "node dist/src/index.js",
+    "start:dist": "node dist/src/app.js",
     "lint": "eslint --fix src test",
     "test": "jest",
     "typecheck": "tsc --noEmit"
@@ -21,6 +21,8 @@
   "license": "MIT",
   "dependencies": {
     "dotenv": "^16.4.5",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
     "telegraf": "^4.16.3"
   },
   "devDependencies": {
